@@ -51,9 +51,22 @@ $em-base: 16 !default;
 
 $default-float: left;
 
+//Colors
+$black: #000;
+$white: #EDEBE6;
+$dark-grey: #373737;
+$medium-grey: #565455;
+$brown: #BCB2A8;
+$dark-red: #841921;
+$red: #B01B22;
+$blue: #85A8BF;
+$light-blue: #90C6B6;
+$green: #D6E1C6;
+$orange: #D56434;
+
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Museo Sans", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -160,8 +173,8 @@ $default-float: left;
 
 // Control header font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+$header-font-family: "Museo Slab", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
 // $header-line-height: 1.4;
@@ -171,7 +184,7 @@ $default-float: left;
 
 // Control header font sizes
 
-// $h1-font-size: emCalc(44);
+$h1-font-size: emCalc(42);
 // $h2-font-size: emCalc(37);
 // $h3-font-size: emCalc(27);
 // $h4-font-size: emCalc(23);
@@ -881,7 +894,7 @@ $default-float: left;
 
 // $panel-bg: darken(#fff, 5%);
 // $panel-border-style: solid;
-// $panel-border-size: 1px;
+$panel-border-size: 0;
 
 // We use this % to control how much we darken things on hover
 
@@ -1235,12 +1248,12 @@ $default-float: left;
 
 // Background color for the top bar
 
-// $topbar-bg: #111;
+ $topbar-bg: $dark-grey;
 
 // Height and margin
 
 // $topbar-height: 45px;
-// $topbar-margin-bottom: emCalc(30);
+$topbar-margin-bottom: 0;
 
 // Control Input height for top bar
 
@@ -1262,7 +1275,7 @@ $default-float: left;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
+$topbar-link-color: $white;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-weight: bold;
@@ -1281,8 +1294,8 @@ $default-float: left;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+$topbar-menu-link-color: $white;
+$topbar-menu-icon-color: $white;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 
@@ -1300,3 +1313,4 @@ $default-float: left;
 // Sticky Class
 
 // $topbar-sticky-class: ".sticky";
+
